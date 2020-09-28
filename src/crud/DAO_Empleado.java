@@ -23,7 +23,7 @@ public class DAO_Empleado implements Serializable {
     public void eliminarCliente(String clave) throws SQLException {
         emp.setClave(clave);
         Statement statement = ConexionUnica.getInstance().getConnection().createStatement();
-        statement.executeUpdate("DELETE FROM Empleados WHERE clave = " + emp.getClave());
+        statement.executeUpdate("DELETE FROM Empleados WHERE clave = '" + emp.getClave()+"'");
         statement.close();
     }
 

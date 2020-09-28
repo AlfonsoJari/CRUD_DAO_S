@@ -4,7 +4,6 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
-import javax.swing.table.DefaultTableModel;
 
 public class Principal extends JFrame {
 
@@ -128,6 +127,10 @@ public class Principal extends JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
+        clavetxt.setText(null);
+        nombretxt.setText(null);
+        direcciontxt.setText(null);
+        telefonotxt.setText(null);
     }//GEN-LAST:event_AnadirActionPerformed
 
     private void EliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarActionPerformed
@@ -136,6 +139,10 @@ public class Principal extends JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
+        clavetxt.setText(null);
+        nombretxt.setText(null);
+        direcciontxt.setText(null);
+        telefonotxt.setText(null);
     }//GEN-LAST:event_EliminarActionPerformed
 
     private void EditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditarActionPerformed
@@ -144,6 +151,10 @@ public class Principal extends JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
+        clavetxt.setText(null);
+        nombretxt.setText(null);
+        direcciontxt.setText(null);
+        telefonotxt.setText(null);
     }//GEN-LAST:event_EditarActionPerformed
 
     public static void main(String args[]) {
